@@ -1,0 +1,155 @@
+#!/bin/bash
+trap ''2
+while true
+do
+clear
+BAR='▁▂▄▅▆▇█ Main █▇▆▅▄▂▁'
+for i in {1..20}; do
+    echo -ne "\r${BAR:0:$i}"
+    sleep .01
+done
+clear
+echo "_________▁▂▄▅▆▇█ MΛIП █▇▆▅▄▂▁__________"
+echo "                                        "
+echo "      1) - tpaos                "
+echo "      2) - Fang                 "
+echo "      3) - Kali                 "
+echo "      4) - Fallout Menu         "
+echo "      5) -                      "
+echo "      6) -                      "
+echo "      7) -                      "
+echo "      8) -                      "
+echo "      9) -                      "
+echo "      10) -                     "
+echo "      11) -                     "
+echo "      12) -                     "
+echo "      Q) - Quit                 "
+echo -e "\n"
+echo -e "    ▁▂▄▅▆▇█ Pick An Option █▇▆▅▄▂▁: \c"
+read answer
+case "$answer" in
+1) BAR='▁▂▄▅▆▇█ TPAOS █▇▆▅▄▂▁'
+   for i in {1..20}; do
+       echo -ne "\r${BAR:0:$i}"
+       sleep .01
+   done
+   sleep 1
+   cd ~
+   cd bin\\tpaos
+   python tpaos.py
+;;
+2) BAR='▁▂▄▅▆▇█ Fang █▇▆▅▄▂▁ '
+   for i in {1..20}; do
+       echo -ne "\r${BAR:0:$i}"
+       sleep .01
+   done
+   sleep 1
+   cd ~
+   cd bin/tpaos
+   clear
+   python fang.py
+;;
+3) BAR='▁▂▄▅▆▇█ Fallout █▇▆▅▄▂▁ '
+   for i in {1..20}; do
+       echo -ne "\r${BAR:0:$i}"
+       sleep .01
+   done
+   sleep 1
+   cd ~
+   kali
+;;
+4) BAR='▁▂▄▅▆▇█ Kali █▇▆▅▄▂▁'
+   for i in {1..20}; do
+       echo -ne "\r${BAR:0:$i}"
+       sleep .01
+   done
+   cd ~
+   F
+;;
+5) BAR='▁▂▄▅▆▇█  █▇▆▅▄▂▁'
+   for i in {1..20}; do
+       echo -ne "\r${BAR:0:$i}"
+       sleep .01
+   done
+   cd ~
+   
+;;
+6) BAR='▁▂▄▅▆▇█Terminal█▇▆▅▄▂▁'
+   for i in {1..20}; do
+       echo -ne "\r${BAR:0:$i}"
+       sleep .01
+   done
+   cd ~
+   cd bin
+;;
+7) BAR='▁▂▄▅▆▇█popopen█▇▆▅▄▂▁'
+   for i in {1..20}; do
+       echo -ne "\r${BAR:0:$i}"
+       sleep .01
+   done
+   sleep 1
+   cd ~
+   cd crux/py
+   python popopen.py
+;;
+8) BAR='▁▂▄▅▆▇█try█▇▆▅▄▂▁'
+   for i in {1..20}; do
+       echo -ne "\r${BAR:0:$i}"
+       sleep .01
+   done
+   sleep 1
+   cd ~
+   cd crux/pys
+   clear
+   python try.py
+;;
+9) BAR='▁▂▄▅▆▇█Main█▇▆▅▄▂▁'
+   for i in {1..20}; do
+       echo -ne "\r${BAR:0:$i}"
+       sleep .01
+   done
+   sleep 1
+;;
+10) BAR='▁▂▄▅▆▇█ edit P-Menu █▇▆▅▄▂▁'
+    for i in {1..20}; do
+        echo -ne "\r${BAR:0:$i}"
+        sleep .01
+    done
+    sleep 1
+;;
+11) BAR='▁▂▄▅▆▇█ edit T-Menu █▇▆▅▄▂▁'
+    for i in {1..20}; do
+        echo -ne "\r${BAR:0:$i}"
+        sleep .01
+    done
+    sleep 1
+;;
+12) BAR='▁▂▄▅▆▇█ █▇▆▅▄▂▁'
+    for i in {1..20}; do
+        echo -ne "\r${BAR:0:$i}"
+        sleep .01
+    done
+    sleep 1
+;;
+Q) clear
+   BAR='▁▂▄▅▆▇█ Quit M-Menu █▇▆▅▄▂▁'
+   for i in {1..20}; do
+       echo -ne "\r${BAR:0:$i}"
+       sleep .01
+   done
+   exit
+;;
+*) BAR='▁▂▄▅▆▇█No Option█▇▆▅▄▂▁'
+   for i in {1..20}; do
+       echo -ne "\r${BAR:0:$i}"
+       sleep .01
+   done
+   clear
+   echo " ▁▂▄▅▆▇█ NOT A OPTION █▇▆▅▄▂▁"
+   sleep 1
+   M
+esac
+clear
+exit && cd
+sleep 1
+done
