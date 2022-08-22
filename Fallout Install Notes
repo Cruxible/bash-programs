@@ -1,0 +1,86 @@
+Fallout New Vegas Crux's F-Menu 
+(Bash)
+
+1. Install git bash for windows
+2. Move bin file to home dir.(C:/Users/"your profile" in my case it's tagro)
+3. Open Git Bash Terminal and change dir to bin.
+4. type chmod +x F into the terminal to give permissions.
+5. Type F to run script( It's best to have windows defender turned off.)
+6. Choose to install the New Vegas option and follow the steps.
+7. run the invaladation invaladated .exe
+8. Now you can add what mods you want from Nexus Mod mananger.
+
+Fallout 3 Crux's F-Menu
+
+1. Choose Install Fallout 3 in F-Menu(Follow instructions)
+2. Choose crash fix for Fallout 3 in F-Menu(Follow instructions)
+3. Run Invaladation invaladated .exe
+4. Run Unoffical Patch for fallout 3
+5. Now you can install mods via Nexus Mod Mananger
+
+Fallout New Vegas
+ 
+Official sites for all three files:
+ 
+NVSE: http://nvse.silverlock.org/
+ 
+NVAC: https://www.nexusmods.com/newvegas/mods/53635/
+ 
+4GB patcher (should only be used if you have multiple mods and if the Anti-crash plugin did not work): https://www.nexusmods.com/newvegas/mods/62552
+
+[ Installation ]
+
+1. Copy all NVSE files to main Fallout New Vegas dir.
+2. copy NVAC file to Fallout New Vegas Data/NVSE dir.(Config file is not realvant anymore.)
+3. move 4GB files into main Fallout New Vegas dir and run the patch.
+4. Run the invaladation invaladataed program.
+(Other Mods can be installed via nexus mod manager.)
+
+Fallout 3
+
+intell bypass
+1. move de3d file to main fallout dir
+
+2. xlive dll file to fallout 3 main dir(Or move Xbox live disabler to main dir and run the .exe)
+3. go to fallout 3 exe properties and run in compatablity mode with win 7
+also run as admin
+should run
+
+further preformance fix
+
+4. script extender
+select all, copy to fallout 3 main dir
+set fose loader .exe to run as admin
+
+5. Archive Invalidation Invalidated
+run .exe file and activate
+
+6. 4 gb enabler
+Make new dir in fallout 3 main dir called orignals
+Copy and paste fallout3.exe to orignals
+Copy fallout_default.ini to originals
+Move 4gb fallout.ini to Documents/MyGames/Fallout3
+Rename old fallout.ini to FALLOUT_Orignals.ini
+The rest of the 4gb files go to main fallout3 dir
+Run 4gb_patch.exe
+Popup will appear to pick fose_loader.exe to run the patch on Fose_loader.exe
+Then run patch again on fallout3.exe
+7. Run game from fose_loader.exe
+
+Official sites for all files:
+
+Intel Bypass https://www.nexusmods.com/fallout3/mods/17209/
+Windows Live Disabler https://www.nexusmods.com/fallout3/mods/1086
+ENBoost http://www.enbdev.com/patch_falloutnv_enboost_v0203.htm
+Updated unoffical patch https://www.nexusmods.com/fallout3/mods/19122/
+Fose Script extender http://fose.silverlock.org/
+4gb patch https://ntcore.com/?page_id=371
+
+Fallout 3 ini path: 
+Documents/MyGames/Fallout3
+
+In the above location:
+   Rename FALLOUT.ini to FALLOUT-Original.ini
+   Paste Fallout.ini from mod download
+
+

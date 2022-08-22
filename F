@@ -1,0 +1,159 @@
+#!/bin/bash
+trap ''2
+while true
+do
+clear
+echo "______▁▂▄▅▆▇█ Fallout Menu █▇▆▅▄▂▁______"
+echo " 1) - Start Fallout NV"
+echo " 2) - Install Fallout NV/crash fix"
+echo " 3) - Uninstall Fallout New Vegas"
+echo " 4) - Start Fallout 3"
+echo " 5) - Install Fallout 3"
+echo " 6) - Fallout 3 Crashfix"
+echo " 7) - Uninstall Fallout 3"
+echo " 8) - "
+echo " 9) - "
+echo " 10) - "
+echo " 11) - "
+echo " M) - Main"
+echo " Q) - Quit"
+echo -e "\n"
+echo -e "▁▂▄▅▆▇█ Pick A Option █▇▆▅▄▂▁: \c"
+read answer
+case "$answer" in
+1) echo "______▁▂▄▅▆▇█ Start Fallout NV █▇▆▅▄▂▁______"
+   sleep 1
+   cd C:/'GOG Games'/'Fallout New Vegas'
+   start FalloutNV.exe*
+   exit
+;;
+2) echo "______▁▂▄▅▆▇█ Install Fallout NV/Crash Fix █▇▆▅▄▂▁______"
+   sleep 1
+   cd ~/bin/fo_nv.sh
+   start 'setup_fallout_new_vegas_1.4.0.525_(12010).exe'*
+   cd ~
+   echo "Please Wait for Fallout to Install."
+   echo "Don't forget to activate the AII for New Vegas."
+   sleep 480
+
+   echo "Copying Crash Files..."
+   cd ~/bin/fo_nv.sh/copy_to_in
+   cp -r Data C:/'GOG Games'/'Fallout New Vegas'
+   cp -r src C:/'GOG Games'/'Fallout New Vegas'
+   cp nvse_1_4.dll* C:/'GOG Games'/'Fallout New Vegas'
+   cp nvse_1_4ng.dll* C:/'GOG Games'/'Fallout New Vegas'
+   cp nvse_editor_1_4.dll* C:/'GOG Games'/'Fallout New Vegas'
+   cp nvse_loader.exe* C:/'GOG Games'/'Fallout New Vegas'
+   cp nvse_steam_loader.dll* C:/'GOG Games'/'Fallout New Vegas'
+   cp FalloutNVpatch.exe* C:/'GOG Games'/'Fallout New Vegas'
+   cp nvse_readme.txt C:/'GOG Games'/'Fallout New Vegas'
+   cp nvse_whatsnew.txt C:/'GOG Games'/'Fallout New Vegas'
+   cp 'Fallout - AII-FNV!.bsa' C:/'GOG Games'/'Fallout New Vegas'
+   cp 'Fallout New Vegas ArchiveInvalidation Invalidated!.exe'* C:/'GOG Games'/'Fallout New Vegas'
+
+   echo "+!!!Crash Files Copied!!!+"
+   sleep 5
+   clear
+   echo "Follow the steps to finish installing Fallout New Vegas"
+   echo "Don't forget to activate the AII for modding."
+   sleep 5
+   cd ~ && F
+;;
+3) echo "______▁▂▄▅▆▇█ Uninstall Fallout NV █▇▆▅▄▂▁______"
+   cd ~
+   cd C:/'GOG Games'/'Fallout New Vegas'
+   start unins000.exe*
+   cd ~ && F
+;;
+4) echo "______▁▂▄▅▆▇█ Start Fallout 3 █▇▆▅▄▂▁______"
+   sleep 1
+   cd ~
+   cd C:/'GOG Games'/'Fallout 3'
+   start fose_loader.exe
+   F
+;;
+5) echo "______▁▂▄▅▆▇█ Install Fallout 3 █▇▆▅▄▂▁______"
+   sleep 1
+   cd ~/bin/fo_3_CF
+   start 'setup_fallout_3_1.7.0.3_(12034).exe'*
+   cd ~
+   echo "Please Wait for Fallout to Install"
+   sleep 500
+   F
+;;
+6) echo "______▁▂▄▅▆▇█ Fallout 3 Crash Fix █▇▆▅▄▂▁______"
+   sleep 1
+   echo "Don't forget to activate the AII."
+   echo "and the Unoffical Fallout 3 patch for modding"
+   cd ~/bin/fo_3_CF/crashfixpt1.sh
+   cp d3d9.dll* C:/'GOG Games'/'Fallout 3'
+   cp FALLOUT.INI C:/'GOG Games'/'Fallout 3'
+   cp fose_1_0.dll* C:/'GOG Games'/'Fallout 3'
+   cp fose_1_1.dll* C:/'GOG Games'/'Fallout 3'
+   cp fose_1_4.dll* C:/'GOG Games'/'Fallout 3'
+   cp fose_1_4b.dll* C:/'GOG Games'/'Fallout 3'
+   cp fose_1_5.dll* C:/'GOG Games'/'Fallout 3'
+   cp fose_1_6.dll* C:/'GOG Games'/'Fallout 3'
+   cp fose_1_7.dll* C:/'GOG Games'/'Fallout 3'
+   cp fose_1_7ng.dll* C:/'GOG Games'/'Fallout 3'
+   cp fose_command_doc.html C:/'GOG Games'/'Fallout 3'
+   cp fose_editor_1_1.dll* C:/'GOG Games'/'Fallout 3'
+   cp fose_editor_1_5.dll* C:/'GOG Games'/'Fallout 3'
+   cp fose_loader.exe* C:/'GOG Games'/'Fallout 3'
+   cp fose_readme.txt C:/'GOG Games'/'Fallout 3'
+   cp fose_whatsnew.txt C:/'GOG Games'/'Fallout 3'
+   cp 'Games for Windows LIVE Disabler Readme.html' C:/'GOG Games'/'Fallout 3'
+   cp 'Games for Windows LIVE Disabler.exe'* C:/'GOG Games'/'Fallout 3'
+   cp -r src C:/'GOG Games'/'Fallout 3'
+   cp xlive.dll* C:/'GOG Games'/'Fallout 3'
+   cp 4gb_patch.exe* C:/'GOG Games'/'Fallout 3'
+   cp 'ArchiveInvalidation Invalidated!.exe'* C:/'GOG Games'/'Fallout 3'
+   cp 'Fallout INI Changes.txt' C:/'GOG Games'/'Fallout 3'
+   cp Fallout.INI C:/'GOG Games'/'Fallout 3'
+   cp Fallout_default.INI C:/'GOG Games'/'Fallout 3'
+   cd ~
+   cd C:/'GOG Games'/'Fallout 3'
+   start 4gb_patch.exe*
+   sleep 5
+   echo "Don't forget to activate the AII for modding"
+   echo "and the Unoffical Fallout 3 patch for modding"
+   F
+;;
+7) echo "______▁▂▄▅▆▇█ Uninstall Fallout 3 █▇▆▅▄▂▁______"
+   sleep 1
+   cd ~
+   cd C:/'GOG Games'/'Fallout 3'
+   start unins000.exe*
+   F
+;;
+8) echo "______▁▂▄▅▆▇█ █▇▆▅▄▂▁______"
+   sleep 1
+
+;;
+9) echo "______▁▂▄▅▆▇█ █▇▆▅▄▂▁______"
+   sleep 1
+;;
+10) echo "______▁▂▄▅▆▇█ █▇▆▅▄▂▁______"
+   sleep 1
+   cd ~
+;;
+11) echo "______▁▂▄▅▆▇█ █▇▆▅▄▂▁______"
+   sleep 1
+   cd ~
+;;
+M) echo "______▁▂▄▅▆▇█ Back To Main █▇▆▅▄▂▁______"
+   sleep 1
+   cd ~ && M
+;;
+Q) echo "______▁▂▄▅▆▇█ QUIT █▇▆▅▄▂▁______"
+   exit
+   sleep 1
+;;
+*) echo "______▁▂▄▅▆▇█ NOT AN OPTION █▇▆▅▄▂▁______"
+   sleep 1
+   P
+esac
+clear
+exit && cd
+sleep 1
+done
